@@ -1,0 +1,29 @@
+# Windows artifacts
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+
+# Powershell artifacts
+*.ps1xml
+
+# Scan outtput (raw XML - too large and contains sensitive system info)
+*.xml
+
+# Evidence folers - only commit sanitized reports not raw scan data
+windows/evidence/*
+debian/evidence/*
+
+# Credentials and secrets - new commit these
+*.key
+*.pem
+*.pfx
+*.p12
+*password*
+*secret*
+*credential*
+
+# Editor artifacts
+.vscode/
+*.swp
+*~
